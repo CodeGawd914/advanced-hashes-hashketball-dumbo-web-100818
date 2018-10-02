@@ -195,7 +195,6 @@ end
       if player[:shoe] > shoe
         shoe = player[:shoe]
         rebounds = player[:rebounds]
-        binding.pry
       end
     end
   end
