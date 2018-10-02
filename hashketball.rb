@@ -125,6 +125,7 @@ def num_points_scored(name)
      x[:player_name] == name 
       # return x[:points].to_i
    end
+   binding.pry
  end
 end
 
