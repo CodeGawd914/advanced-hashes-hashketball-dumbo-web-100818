@@ -123,11 +123,12 @@ def num_points_scored(name)
   game_hash.each do |key, values|
     player = values[:players].find do |x|
      x[:player_name] == name 
-      # return x[:points].to_i
    end
-   binding.pry
+   if player != nil 
+    return player[:points]
+   end
  end
-end
+ end
 
 def team_colors(team)
   array = []
