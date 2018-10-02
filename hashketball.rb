@@ -202,3 +202,13 @@ end
   end
   rebounds
 end
+
+def add_points
+  game_hash.each do |key, value|
+    if key == :away
+    value[:players] do |x|
+      x[:slam_dunks] = x[:slam_dunks]+1
+    end
+    end
+  end
+end
