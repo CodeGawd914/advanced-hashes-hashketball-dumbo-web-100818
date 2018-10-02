@@ -1,5 +1,6 @@
+
   require 'pry'
-  def game_hash
+def game_hash
   {
     :home => {
       :team_name => "Brooklyn Nets",
@@ -195,6 +196,7 @@ end
       if player[:shoe] > shoe
         shoe = player[:shoe]
         rebounds = player[:rebounds]
+        binding.pry
       end
     end
   end
